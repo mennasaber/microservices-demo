@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class ProductService {
-  getHello(): string {
-    return 'Hello World from product service!';
+  getHello() {
+    return { text: 'Hello World from product service using TCP transporter!' };
   }
 }

@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class UserService {
-  getHello(): string {
-    return 'Hello World from user service!';
+  getHello() {
+    return { text: 'Hello World from user service using GRPC transporter!' };
   }
 }
